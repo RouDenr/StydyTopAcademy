@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello Github!!!\n";
+    std::cout << "Hello Test Commit!!!\n";
     return 0;
 }

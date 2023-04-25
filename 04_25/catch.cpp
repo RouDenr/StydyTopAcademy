@@ -22,6 +22,19 @@ int main(int argc, char const *argv[])
 {
 
     int *n = new int();
+    const int cap = 15;
+    int mass[cap] = {1,2,3,4,5};
+    int size = 5;
+
+
+    std::cout << "Выберите команду \n";
+    std::cout << "3. Вывод массива \n";
+    std::cout << "4. Поиск элемена \n";
+    std::cout << "5. Удаление элемента элемена по значению \n";
+    std::cout << "6. Добавление элемента\n";
+    std::cout << "6. Удаление элемента элемена по индексу \n";
+    std::cout << "-1. Выход \n";
+    std::cout << " : ";
 
     try {
         input_n(n);

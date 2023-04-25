@@ -64,7 +64,8 @@ void print_all_file(const std::string &filename) {
 
 // void out_recd()
 
-void read_all(std::istream &in) {
+void read_all(std::istream &in,
+              std::ostream &out) {
     if (not in.good()) {
         std::cout << "file error\n";
         return;
@@ -73,7 +74,7 @@ void read_all(std::istream &in) {
     while (not in.eof()) {
         std::string line;
         std::getline(in, line);
-        std::cout << line << "\n";
+        out << line << "\n";
     }
 }
 
